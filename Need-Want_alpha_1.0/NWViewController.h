@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NWViewController : UIViewController
+@interface NWViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @end

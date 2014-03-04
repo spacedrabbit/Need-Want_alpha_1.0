@@ -15,8 +15,10 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *taskTable;
 
-@property (strong, nonatomic) UITextField * addTask;
 @property (strong, nonatomic) UIButton *addBtn;
+@property (strong, nonatomic) IBOutlet UITextField *taskText;
+
+
 
 @end
 
@@ -56,6 +58,15 @@
     [super viewDidLoad];
     
     totalSections = 3;
+    
+    UIImage * fry = [UIImage imageNamed:@"fry.jpg"];
+    UIImageView * navImageView = [[UIImageView alloc] initWithImage:fry];
+    
+    [navImageView setFrame:CGRectMake(0.0,44.0,[super view].frame.size.width, 45)];
+    [navImageView setContentMode:UIViewContentModeTop];
+    [navImageView setClipsToBounds:TRUE];
+    
+    [self.navigationItem setTitleView:navImageView];
     
     //demo tasks
     [self.taskList addObjectsFromArray:@[@"Check on Cat", @"Buy Milk", @"Call Dentist", @"Return Movie Rental"]];
@@ -113,25 +124,22 @@
 
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"needCell"];
     
+    //programatically create the textfield and button
     if (indexPath.section == 0)
     {
         cell = [tableView dequeueReusableCellWithIdentifier:@"addTask"];
         
-        //creating and adding a textfield progmatically
-        self.addTask = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width-100.0, tableView.rowHeight)];
+        self.addBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         
-        [self.addTask setDelegate:self];
-        [[cell contentView] addSubview:self.addTask];
-        
-        //creating and adding a button progmatically
-        self.addBtn = [[UIButton alloc] initWithFrame:CGRectMake(tableView.frame.size.width-100.0, cell.frame.origin.y, 100.0, tableView.rowHeight)];
-        [self.addBtn setBackgroundColor:[UIColor lightGrayColor]];
-        [self.addBtn setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
-        [self.addBtn setTitle:@"Add" forState:UIControlStateNormal];
+        [self.addBtn setTitle:@"+" forState:UIControlStateNormal];
+        self.addBtn.titleLabel.font = [UIFont fontWithName:@"Menlo" size:32.0];
+        [self.addBtn setFrame:CGRectMake(5, 0, 35, 35)];
         [self.addBtn addTarget:self action:@selector(addBtn:) forControlEvents:UIControlEventTouchUpInside];
-        
-        [[cell contentView] addSubview:self.addBtn];
-        
+        [cell setAccessoryView:self.addBtn];
+
+        self.taskText = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width-100.0, tableView.rowHeight)];
+        [self.taskText setDelegate:self];
+        [[cell contentView] addSubview:self.taskText];
         
     }
     else if (indexPath.section == 1)
@@ -149,16 +157,15 @@
 - (void)addBtn:(UIButton *)sender {
     
     //check to see if something was inputted
-    if ([self.addTask.text length] > 0 ){
+    if ([self.taskText.text length] > 0 ){
         //adds task to array
-        [self.taskList addObject:self.addTask.text];
+        [self.taskList addObject:self.taskText.text];
     }
     //clears the text field
-    self.addTask.text = @"";
+    self.taskText.text = @"";
     
     //reloads the data in the 1st section
     [self.taskTable reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
-    
     //dismiss keyboard
     [self.view endEditing:TRUE];
 }
@@ -209,5 +216,12 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:TRUE];
+}
+
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section > 0) {
+        NSLog(@"Future Functionallity");
+    }
 }
 @end

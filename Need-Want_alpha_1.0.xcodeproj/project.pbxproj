@@ -21,6 +21,8 @@
 		140CBEDF18C050E9002D1536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140CBEC118C050E9002D1536 /* UIKit.framework */; };
 		140CBEE718C050E9002D1536 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 140CBEE518C050E9002D1536 /* InfoPlist.strings */; };
 		140CBEE918C050E9002D1536 /* Need_Want_alpha_1_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 140CBEE818C050E9002D1536 /* Need_Want_alpha_1_0Tests.m */; };
+		14C8465F18C4535C00CE3807 /* fry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8465E18C4535C00CE3807 /* fry.jpg */; };
+		14C8466118C462F600CE3807 /* bandera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14C8466018C462F600CE3807 /* bandera.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		140CBEE418C050E9002D1536 /* Need-Want_alpha_1.0Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Need-Want_alpha_1.0Tests-Info.plist"; sourceTree = "<group>"; };
 		140CBEE618C050E9002D1536 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		140CBEE818C050E9002D1536 /* Need_Want_alpha_1_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Need_Want_alpha_1_0Tests.m; sourceTree = "<group>"; };
+		14C8465E18C4535C00CE3807 /* fry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fry.jpg; sourceTree = "<group>"; };
+		14C8466018C462F600CE3807 /* bandera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bandera.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				140CBECC18C050E9002D1536 /* NWAppDelegate.h */,
 				140CBECD18C050E9002D1536 /* NWAppDelegate.m */,
 				140CBECF18C050E9002D1536 /* Main.storyboard */,
+				14C8466018C462F600CE3807 /* bandera.jpg */,
+				14C8465E18C4535C00CE3807 /* fry.jpg */,
 				140CBED218C050E9002D1536 /* NWViewController.h */,
 				140CBED318C050E9002D1536 /* NWViewController.m */,
 				140CBED518C050E9002D1536 /* Images.xcassets */,
@@ -232,6 +238,8 @@
 				140CBED618C050E9002D1536 /* Images.xcassets in Resources */,
 				140CBEC818C050E9002D1536 /* InfoPlist.strings in Resources */,
 				140CBED118C050E9002D1536 /* Main.storyboard in Resources */,
+				14C8465F18C4535C00CE3807 /* fry.jpg in Resources */,
+				14C8466118C462F600CE3807 /* bandera.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +469,7 @@
 				140CBEEE18C050E9002D1536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		140CBEEF18C050E9002D1536 /* Build configuration list for PBXNativeTarget "Need-Want_alpha_1.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +478,7 @@
 				140CBEF118C050E9002D1536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

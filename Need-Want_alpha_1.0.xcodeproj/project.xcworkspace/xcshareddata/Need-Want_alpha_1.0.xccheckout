@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6B159637-27FA-4238-95CE-3167C8D0EA9F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Need-Want_alpha_1.0</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>803AAAEC-DA34-4470-9AEB-8654F1F4F32A</key>
+		<string>https://github.com/spacedrabbit/Need-Want_alpha_1.0.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Need-Want_alpha_1.0.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>803AAAEC-DA34-4470-9AEB-8654F1F4F32A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/spacedrabbit/Need-Want_alpha_1.0.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>803AAAEC-DA34-4470-9AEB-8654F1F4F32A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>803AAAEC-DA34-4470-9AEB-8654F1F4F32A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Need-Want_alpha_1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

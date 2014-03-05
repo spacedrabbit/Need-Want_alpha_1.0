@@ -18,8 +18,8 @@
 @property (strong, nonatomic) UIButton *addBtn;
 @property (strong, nonatomic) IBOutlet UITextField *taskText;
 
-
-
+@property (strong, nonatomic) UIColor * primaryPink;
+@property (strong, nonatomic) UIColor * primaryBlue;
 @end
 
 @implementation NWViewController
@@ -47,6 +47,20 @@
     return _completedTaskList;
 }
 
+-(UIColor *)primaryPink{
+    if(!_primaryPink){
+        _primaryPink = [UIColor colorWithRed:226.0/255.0 green:54.0/255.0 blue:130.0/255.0 alpha:1.0];
+    }
+    return _primaryPink;
+}
+
+-(UIColor *)primaryBlue{
+    if(!_primaryBlue){
+        _primaryBlue = [UIColor colorWithRed:51.0/255.0 green:156.0/255.0 blue:234.0/255.0 alpha:1.0];
+    }
+    return _primaryBlue;
+}
+
 /**********************************
  
  View methods
@@ -67,7 +81,7 @@
     [navImageView setClipsToBounds:TRUE];
     
     [self.navigationItem setTitleView:navImageView];
-    
+    [self.taskTable setBackgroundColor:[UIColor whiteColor]];
     //demo tasks
     [self.taskList addObjectsFromArray:@[@"Check on Cat", @"Buy Milk", @"Call Dentist", @"Return Movie Rental"]];
 }
@@ -145,10 +159,12 @@
     else if (indexPath.section == 1)
     {
         cell.textLabel.text = self.taskList[indexPath.row];
+        cell.textLabel.textColor = self.primaryPink;
     }
     else
     {
         cell.textLabel.text = self.completedTaskList[indexPath.row];
+        cell.textLabel.textColor = self.primaryBlue;
     }
     
     return cell;

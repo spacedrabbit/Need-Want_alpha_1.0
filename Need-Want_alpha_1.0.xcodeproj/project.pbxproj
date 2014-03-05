@@ -21,6 +21,7 @@
 		140CBEDF18C050E9002D1536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140CBEC118C050E9002D1536 /* UIKit.framework */; };
 		140CBEE718C050E9002D1536 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 140CBEE518C050E9002D1536 /* InfoPlist.strings */; };
 		140CBEE918C050E9002D1536 /* Need_Want_alpha_1_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 140CBEE818C050E9002D1536 /* Need_Want_alpha_1_0Tests.m */; };
+		148DD32A18C6FC5700E5E38D /* NW-S-ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148DD32918C6FC5700E5E38D /* NW-S-ViewController.m */; };
 		B1A3B94418C6993200368A5C /* need want icon-01.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A3B94018C6993200368A5C /* need want icon-01.png */; };
 		B1A3B94518C6993300368A5C /* need want launch-02.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A3B94118C6993200368A5C /* need want launch-02.png */; };
 		B1A3B94618C6993300368A5C /* need_want_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A3B94218C6993200368A5C /* need_want_icon.png */; };
@@ -57,6 +58,8 @@
 		140CBEE418C050E9002D1536 /* Need-Want_alpha_1.0Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Need-Want_alpha_1.0Tests-Info.plist"; sourceTree = "<group>"; };
 		140CBEE618C050E9002D1536 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		140CBEE818C050E9002D1536 /* Need_Want_alpha_1_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Need_Want_alpha_1_0Tests.m; sourceTree = "<group>"; };
+		148DD32818C6FC5700E5E38D /* NW-S-ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NW-S-ViewController.h"; sourceTree = "<group>"; };
+		148DD32918C6FC5700E5E38D /* NW-S-ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NW-S-ViewController.m"; sourceTree = "<group>"; };
 		B1A3B94018C6993200368A5C /* need want icon-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "need want icon-01.png"; sourceTree = "<group>"; };
 		B1A3B94118C6993200368A5C /* need want launch-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "need want launch-02.png"; sourceTree = "<group>"; };
 		B1A3B94218C6993200368A5C /* need_want_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = need_want_icon.png; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				140CBECC18C050E9002D1536 /* NWAppDelegate.h */,
 				140CBECD18C050E9002D1536 /* NWAppDelegate.m */,
 				140CBECF18C050E9002D1536 /* Main.storyboard */,
+				148DD32818C6FC5700E5E38D /* NW-S-ViewController.h */,
+				148DD32918C6FC5700E5E38D /* NW-S-ViewController.m */,
 				140CBED218C050E9002D1536 /* NWViewController.h */,
 				140CBED318C050E9002D1536 /* NWViewController.m */,
 				140CBED518C050E9002D1536 /* Images.xcassets */,
@@ -267,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140CBED418C050E9002D1536 /* NWViewController.m in Sources */,
+				148DD32A18C6FC5700E5E38D /* NW-S-ViewController.m in Sources */,
 				140CBECA18C050E9002D1536 /* main.m in Sources */,
 				140CBECE18C050E9002D1536 /* NWAppDelegate.m in Sources */,
 			);
